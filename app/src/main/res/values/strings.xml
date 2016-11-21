@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android_app_project_movile</string>
+    <string name="title_activity_lesion">Activity_lesion</string>
 </resources>

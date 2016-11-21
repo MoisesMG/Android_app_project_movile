@@ -15,6 +15,60 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SubjectSelectionActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ActivityLesion"
+            android:label="@string/app_name"
+            android:parentActivityName=".SubjectSelectionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.SubjectSelectionActivity" />
+        </activity>
+        <activity
+            android:name=".Lesson1_Subject1_Level1"
+            android:label="@string/app_name"
+            android:parentActivityName=".ActivityLesion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.ActivityLesion" />
+        </activity>
+        <activity
+            android:name=".MyWelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme" />
+        <activity
+            android:name=".MateriaNivel2"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".MateriaNivel3"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
+
+        </activity>
+        <activity android:name=".MateriaNivel4"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
