@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_materia_nivel2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -10,40 +9,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="app.rojoyazul.com.android_app_project_movile.MainActivity">
+    tools:context="app.rojoyazul.com.android_app_project_movile.MateriaNivel2">
+
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ScrollViewHome"
+        android:id="@+id/ScrollViewMateria_N2"
         android:fillViewport="true">
+
         <RelativeLayout
-            android:id="@+id/LayoutVerticalHome"
+            android:id="@+id/LayoutVerticalHomeN2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textNIVEL"
+                android:id="@+id/textMateriaN2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mensajeNIVEL"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:layout_alignParentTop="true"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="sans-serif" />
+                android:text="@string/mensajeMateria"
+                android:theme="@style/TITULOS"
+                android:layout_centerHorizontal="true"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN"
+                android:text="@string/S_botonM"
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
-                android:id="@+id/Btn_Nivel1"
-                android:layout_below="@+id/textNIVEL"
+                android:id="@+id/Btn_Materia1N2"
+                android:layout_below="@+id/textMateria"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="45dp"
                 android:theme="@style/StyleBotones"/>
@@ -53,11 +50,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN2"
+                android:text="@string/S_botonM2"
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
-                android:id="@+id/Btn_Nivel2"
-                android:layout_below="@+id/Btn_Nivel1"
+                android:id="@+id/Btn_Materia2N2"
+                android:layout_below="@+id/Btn_Materia1N2"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="24dp"
                 android:theme="@style/StyleBotones"/>
@@ -67,11 +64,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN3"
+                android:text="@string/S_botonM3"
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
-                android:id="@+id/Btn_Nivel3"
-                android:layout_below="@+id/Btn_Nivel2"
+                android:id="@+id/Btn_Materia3N2"
+                android:layout_below="@+id/Btn_Materia2N2"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="24dp"
                 android:theme="@style/StyleBotones"/>
@@ -81,17 +78,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN4"
+                android:text="@string/S_botonM4"
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
-                android:id="@+id/Btn_Nivel4"
-                android:layout_below="@+id/Btn_Nivel3"
+                android:id="@+id/Btn_Materia4N2"
+                android:layout_below="@+id/Btn_Materia3N2"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="24dp"
                 android:theme="@style/StyleBotones"/>
-
-
-
         </RelativeLayout>
     </ScrollView>
     <LinearLayout
@@ -103,17 +97,18 @@
         android:layout_margin="10dp">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/ButtonNav"
+            android:id="@+id/ButtonNavN2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:theme="@style/StyleBotones"
             android:src="@drawable/ic_help_white_24dp"
-            android:layout_above="@id/ScrollViewHome"
+            android:layout_below="@+id/Btn_Materia4N2"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
             android:layout_gravity="end"
             android:layout_marginBottom="16dp"
             android:layout_marginRight="16dp"/>
+
     </LinearLayout>
+
 </RelativeLayout>

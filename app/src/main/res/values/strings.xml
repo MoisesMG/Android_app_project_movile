@@ -1,4 +1,23 @@
 <resources>
-    <string name="app_name">Android_app_project_movile</string>
-    <string name="title_activity_lesion">Activity_lesion</string>
+    <string name="app_name">Aplicacion</string>
+    <string name="action_help">action_help</string>
+    <string name="despliegue_home">despligue a home</string>
+    <string name="S_botonN">NIVEL 1</string>
+    <string name="mensajeNIVEL">Seleccionar Nivel</string>
+    <string name="S_botonN2">NIVEL 2</string>
+    <string name="S_botonN3">NIVEL 3</string>
+    <string name="S_botonN4">NIVEL 4</string>
+    <string name="mensajeMateria">Seleccionar Materia</string>
+    <string name="S_botonM">MATERIA 1</string>
+    <string name="S_botonM2">MATERIA 2</string>
+    <string name="S_botonM3">MATERIA 3</string>
+    <string name="S_botonM4">MATERIA 4</string>
+    <string name="mensajeLesion">Seleccionar Lecciòn</string>
+    <string name="S_botonL">LECCION 1</string>
+    <string name="S_botonL2">LECCION 2</string>
+    <string name="S_botonL3">LECCION 3</string>
+    <string name="S_botonL4">LECCION 4</string>
+    <string name="titulo_leccion_1_materia_1">Titulo leccion 1 - materia 1</string>
+    <string name="lesson1_subject1_level1_description">Vivamus felis neque, consequat blandit ligula eget, malesuada porta felis. Suspendisse potenti. Quisque quis molestie enim. Integer ac consequat tortor. Vestibulum dapibus eget sem vitae efficitur. Mauris at metus urna. Sed id pretium nisl. Mauris vehicula rhoncus erat quis imperdiet. Nullam hendrerit consequat lacus, eu pellentesque sem auctor eget.</string>
+    <string name="label_button_exersise">Ejercicios</string>
 </resources>
