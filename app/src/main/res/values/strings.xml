@@ -20,4 +20,6 @@
     <string name="titulo_leccion_1_materia_1">Titulo leccion 1 - materia 1</string>
     <string name="lesson1_subject1_level1_description">Vivamus felis neque, consequat blandit ligula eget, malesuada porta felis. Suspendisse potenti. Quisque quis molestie enim. Integer ac consequat tortor. Vestibulum dapibus eget sem vitae efficitur. Mauris at metus urna. Sed id pretium nisl. Mauris vehicula rhoncus erat quis imperdiet. Nullam hendrerit consequat lacus, eu pellentesque sem auctor eget.</string>
     <string name="label_button_exersise">Ejercicios</string>
+    <string name="videoDescription">Fusce ut porttitor lectus. Praesent erat dui, placerat et enim vitae, lobortis tincidunt leo. Nam sed sapien ac lectus suscipit tempor.</string>
+    <string name="ver_video">Ver video</string>
 </resources>
