@@ -13,6 +13,7 @@ public class LessonContentActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lesson_content);
 
     }//fin del metodo
 }//fin de la clase
