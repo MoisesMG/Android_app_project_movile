@@ -26,7 +26,7 @@
                 android:id="@+id/textNIVEL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mensajeNIVEL"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 android:layout_alignParentTop="true"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Nivel1"
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN2"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Nivel2"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN3"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Nivel3"
@@ -81,7 +81,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonN4"
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Nivel4"
