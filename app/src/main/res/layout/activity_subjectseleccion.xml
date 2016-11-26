@@ -27,7 +27,7 @@
                 android:id="@+id/textMateria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mensajeMateria"
+                android:text="@string/subjectsTitle"
                 android:theme="@style/TITULOS"
                 android:layout_centerHorizontal="true"/>
 
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonM"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Materia1"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonM2"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Materia2"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonM3"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Materia3"
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="62.5dp"
                 android:layout_marginLeft="62.5dp"
-                android:text="@string/S_botonM4"
+
                 android:textColor="@color/colorAccent"
                 android:textSize="14sp"
                 android:id="@+id/Btn_Materia4"

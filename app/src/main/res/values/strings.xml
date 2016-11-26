@@ -2,16 +2,40 @@
     <string name="app_name">Aplicacion</string>
     <string name="action_help">action_help</string>
     <string name="despliegue_home">despligue a home</string>
-    <string name="S_botonN">NIVEL 1</string>
-    <string name="mensajeNIVEL">Seleccionar Nivel</string>
-    <string name="S_botonN2">NIVEL 2</string>
-    <string name="S_botonN3">NIVEL 3</string>
-    <string name="S_botonN4">NIVEL 4</string>
-    <string name="mensajeMateria">Seleccionar Materia</string>
-    <string name="S_botonM">MATERIA 1</string>
-    <string name="S_botonM2">MATERIA 2</string>
-    <string name="S_botonM3">MATERIA 3</string>
-    <string name="S_botonM4">MATERIA 4</string>
+
+    <!-- valores de texto para las etiquetas de los niveles -->
+    <string name="levelsTitle">Selecciona un nivel </string>
+    <string name="level1">Nivel 1</string>
+    <string name="level2">Nivel 2</string>
+    <string name="level3">Nivel 3</string>
+    <string name="level4">Nivel 4</string>
+
+    <!---Valores de texto para las etiquetas de los nombres de las materias de cada nivel -->
+    <!-- materias nievl 1 -->
+    <string name="subjectsTitle">Selecciona una materia</string>
+    <string name="subject1_Level1">Matematicas 1</string>
+    <string name="subject2_Level1">Lengua y Literatura 1</string>
+    <string name="subject3_Level1">Ciencias sociales 1</string>
+    <string name="subject4_Level1">Ciencias naturales 1</string>
+
+    <!-- materias nivel 2-->
+    <string name="subject1_Level2">Matematicas 2</string>
+    <string name="subject2_Level2">Lengua y Literatura 2</string>
+    <string name="subject3_Level2">Ciencias sociales 2</string>
+    <string name="subject4_Level2">Ciencias naturales 2</string>
+
+    <!-- materias nivel 3 -->
+    <string name="subject1_Level3">Matematicas 3</string>
+    <string name="subject2_Level3">Lengua y Literatura 3</string>
+    <string name="subject3_Level3">Ciencias sociales 3</string>
+    <string name="subject4_Level3">Ciencias naturales 3</string>
+
+    <!-- materias nivel 4 -->
+    <string name="subject1_Level4">Matematicas 4</string>
+    <string name="subject2_Level4">Lengua y Literatura 4</string>
+    <string name="subject3_Level4">Ciencias sociales 4</string>
+    <string name="subject4_Level4">Ciencias naturales 4</string>
+
     <string name="mensajeLesion">Seleccionar Lecciòn</string>
     <string name="S_botonL">LECCION 1</string>
     <string name="S_botonL2">LECCION 2</string>

@@ -41,13 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("sub1","Matematicas 1");
-                bundle.putString("sub2","Lengua y literatura 1");
-                bundle.putString("sub3","Ciencias sociales 1");
-                bundle.putString("sub4","Cienciaas naturales 1");
-                bundle.putInt("cod",10000);
+                bundle.putInt("code", ContentAplication.LEVELS[0]);
                 i.putExtras(bundle);
-                startActivityForResult(i,10000);
+                startActivityForResult(i, ContentAplication.LEVELS[0]);
             }
         });
 
@@ -56,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[1]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[1]);
             }
         });
 
@@ -65,7 +65,11 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[2]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[2]);
             }
         });
 
@@ -74,13 +78,13 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[3]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[3]);
             }
         });
-
-
-
-
 
         //Llamado de la ayuda de la Aplicación
         FloatingActionButton ButtonNav = (FloatingActionButton) findViewById(R.id.ButtonNav);
