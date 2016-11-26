@@ -52,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[1]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[1]);
             }
         });
 
@@ -61,7 +65,11 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[2]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[2]);
             }
         });
 
@@ -70,13 +78,13 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("code", ContentAplication.LEVELS[3]);
+                i.putExtras(bundle);
+                startActivityForResult(i, ContentAplication.LEVELS[3]);
             }
         });
-
-
-
-
 
         //Llamado de la ayuda de la Aplicación
         FloatingActionButton ButtonNav = (FloatingActionButton) findViewById(R.id.ButtonNav);
