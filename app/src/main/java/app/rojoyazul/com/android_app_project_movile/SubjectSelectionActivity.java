@@ -49,17 +49,40 @@ public class SubjectSelectionActivity extends AppCompatActivity {
 
         /**************** guardar informacion enviada de MainActivity *****************/
         Bundle bundle = getIntent().getExtras();
-        String [] buttonsTitles = new String[4];
-        buttonsTitles[0] = bundle.getString("sub1");
-        buttonsTitles[1] = bundle.getString("sub2");
-        buttonsTitles[2] = bundle.getString("sub3");
-        buttonsTitles[3] = bundle.getString("sub4");
+        DefineSubjectTitles(bundle.getInt("code"));
 
-        Btn_Materia1.setText(buttonsTitles[0]);
-        btnMateria2.setText(buttonsTitles[1]);
-        btnMateria3.setText(buttonsTitles[2]);
-        btnMateria4.setText(buttonsTitles[3]);
         /*************************************/
+    }//fin del metodo
+
+    public void DefineSubjectTitles(int levelcode){
+        if(levelcode == ContentAplication.LEVELS[0]){
+            Btn_Materia1.setText(R.string.subject1_Level1);
+            btnMateria2.setText(R.string.subject2_Level1);
+            btnMateria3.setText(R.string.subject3_Level1);
+            btnMateria4.setText(R.string.subject4_Level1);
+        }
+
+        if(levelcode == ContentAplication.LEVELS[1]){
+            Btn_Materia1.setText(R.string.subject1_Level2);
+            btnMateria2.setText(R.string.subject2_Level2);
+            btnMateria3.setText(R.string.subject3_Level2);
+            btnMateria4.setText(R.string.subject4_Level2);
+        }
+
+        if(levelcode == ContentAplication.LEVELS[2]){
+            Btn_Materia1.setText(R.string.subject1_Level3);
+            btnMateria2.setText(R.string.subject2_Level3);
+            btnMateria3.setText(R.string.subject3_Level3);
+            btnMateria4.setText(R.string.subject4_Level3);
+        }
+
+        if(levelcode == ContentAplication.LEVELS[3]){
+            Btn_Materia1.setText(R.string.subject1_Level4);
+            btnMateria2.setText(R.string.subject2_Level4);
+            btnMateria3.setText(R.string.subject3_Level4);
+            btnMateria4.setText(R.string.subject4_Level4);
+        }
+
     }//fin del metodo
 
 }//fin de la clase

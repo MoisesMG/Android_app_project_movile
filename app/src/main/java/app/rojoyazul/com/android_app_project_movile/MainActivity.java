@@ -41,13 +41,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putString("sub1","Matematicas 1");
-                bundle.putString("sub2","Lengua y literatura 1");
-                bundle.putString("sub3","Ciencias sociales 1");
-                bundle.putString("sub4","Cienciaas naturales 1");
-                bundle.putInt("cod",10000);
+                bundle.putInt("code", ContentAplication.LEVELS[0]);
                 i.putExtras(bundle);
-                startActivityForResult(i,10000);
+                startActivityForResult(i, ContentAplication.LEVELS[0]);
             }
         });
 
