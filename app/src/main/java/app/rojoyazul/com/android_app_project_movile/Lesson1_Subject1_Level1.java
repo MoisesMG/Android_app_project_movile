@@ -9,9 +9,6 @@ import android.widget.Button;
 
 
 public class Lesson1_Subject1_Level1 extends AppCompatActivity {
-
-
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {

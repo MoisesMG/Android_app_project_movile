@@ -44,31 +44,6 @@
         <activity
             android:name=".MyWelcomeActivity"
             android:theme="@style/WelcomeScreenTheme" />
-        <activity
-            android:name=".MateriaNivel2"
-            android:label="@string/app_name"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
-            >
-        </activity>
-        <activity
-            android:name=".MateriaNivel3"
-            android:label="@string/app_name"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
-
-        </activity>
-        <activity android:name=".MateriaNivel4"
-            android:label="@string/app_name"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="app.rojoyazul.com.android_app_project_movile.MainActivity" />
-        </activity>
     </application>
 
 </manifest>

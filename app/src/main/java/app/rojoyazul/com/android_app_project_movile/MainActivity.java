@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MateriaNivel2.class);
-                startActivity(intent);
+
             }
         });
 
@@ -66,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MateriaNivel3.class);
-                startActivity(intent);
+
             }
         });
 
@@ -76,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(MainActivity.this, MateriaNivel4.class);
-                startActivity(intent4);
+
             }
         });
 
