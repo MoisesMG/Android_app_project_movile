@@ -18,7 +18,7 @@ public class ActivityLesion extends AppCompatActivity {
         mbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ActivityLesion.this, Lesson1_Subject1_Level1.class);
+                Intent intent = new Intent(ActivityLesion.this, LessonContentActivity.class);
                 startActivity(intent);
             }
         });

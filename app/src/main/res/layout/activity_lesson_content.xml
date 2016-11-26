@@ -9,7 +9,7 @@
     android:paddingBottom="16dp"
     android:paddingRight="16dp"
     android:paddingLeft="16dp"
-    tools:context=".Lesson1_Subject1_Level1">
+    tools:context=".LessonContentActivity">
 
     <ScrollView
         android:layout_width="fill_parent"
