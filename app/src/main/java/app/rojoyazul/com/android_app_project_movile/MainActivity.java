@@ -19,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
     Button Btn_Nivel2;
     Button Btn_Nivel3;
     Button Btn_Nivel4;
+
+    /********************codigos de los niveles *********/
+
+    /***********************************************/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +33,21 @@ public class MainActivity extends AppCompatActivity {
         welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
         welcomeScreen.show(savedInstanceState);
 
+
         //llamado de la actividad MATERIAS (clase SubjetcSelectionActivity) del NIVEL 1
         Btn_Nivel1 = (Button) findViewById(R.id.Btn_Nivel1);
         Btn_Nivel1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (MainActivity.this, SubjectSelectionActivity.class);
-                startActivity(intent);
+                Intent i =  new Intent(MainActivity.this, SubjectSelectionActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("sub1","Matematicas 1");
+                bundle.putString("sub2","Lengua y literatura 1");
+                bundle.putString("sub3","Ciencias sociales 1");
+                bundle.putString("sub4","Cienciaas naturales 1");
+                bundle.putInt("cod",10000);
+                i.putExtras(bundle);
+                startActivityForResult(i,10000);
             }
         });
 
@@ -44,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MateriaNivel2.class);
-                startActivity(intent);
+
             }
         });
 
@@ -54,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MateriaNivel3.class);
-                startActivity(intent);
+
             }
         });
 
@@ -64,8 +74,7 @@ public class MainActivity extends AppCompatActivity {
         Btn_Nivel4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(MainActivity.this, MateriaNivel4.class);
-                startActivity(intent4);
+
             }
         });
 
@@ -81,15 +90,13 @@ public class MainActivity extends AppCompatActivity {
                 welcomeScreen.forceShow();
             }
         });
-    }
+    }//fin del metodo
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         welcomeScreen.onSaveInstanceState(outState);
-    }
-
-
-//fin del metodo
+    }//fin del metodo
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -108,4 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }//fin del metodo
+
+
+
 }//fin de la clase

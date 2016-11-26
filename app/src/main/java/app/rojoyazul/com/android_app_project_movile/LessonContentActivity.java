@@ -4,12 +4,16 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ButtonBarLayout;
+import android.widget.Button;
 
 
-public class Lesson1_Subject1_Level1 extends AppCompatActivity {
+public class LessonContentActivity extends AppCompatActivity {
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson1_subject1_level1);
+        setContentView(R.layout.activity_lesson_content);
+
     }//fin del metodo
 }//fin de la clase

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".LessonContentActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtLessonTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TITULOS"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/titulo_leccion_1_materia_1"
+                />
+
+            <TextView
+                android:id="@+id/txtLessonDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:theme="@style/lessonDescrip"
+                android:text="@string/lesson1_subject1_level1_description"/>
+
+            <Button
+                android:id="@+id/btnEjecicios1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65.5dp"
+                android:layout_marginRight="65.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:theme="@style/StyleBotones"
+                android:text="@string/label_button_exersise"
+                android:onClick="onClick" />
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/caption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/caption_view"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/cardtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo de video"
+                        android:textSize="24sp"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_below="@+id/caption1"/>
+
+                    <TextView
+                        android:id="@+id/description1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/videoDescription"
+                        android:textSize="14sp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_below="@+id/cardtitle1"
+                        />
+
+                    <Button
+                        android:id="@+id/goVideo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="@string/ver_video"
+                        android:layout_below="@+id/description1"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--segundo video -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/caption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/caption_view"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/cardtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo de video"
+                        android:textSize="24sp"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_below="@+id/caption2"/>
+
+                    <TextView
+                        android:id="@+id/description2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/videoDescription"
+                        android:textSize="14sp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_below="@+id/cardtitle2"
+                        />
+
+                    <Button
+                        android:id="@+id/goVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="@string/ver_video"
+                        android:layout_below="@+id/description2"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- tercer video -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/caption3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/caption_view"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/cardtitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo de video"
+                        android:textSize="24sp"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_below="@+id/caption3"/>
+
+                    <TextView
+                        android:id="@+id/description3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/videoDescription"
+                        android:textSize="14sp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_below="@+id/cardtitle3"
+                        />
+
+                    <Button
+                        android:id="@+id/goVideo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="@string/ver_video"
+                        android:layout_below="@+id/description3"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--cuarto video -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="@color/colorAccent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/caption4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/caption_view"
+                        android:scaleType="centerCrop"/>
+                    <TextView
+                        android:id="@+id/cardtitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo de video"
+                        android:textSize="24sp"
+                        android:paddingTop="24dp"
+                        android:paddingBottom="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_below="@+id/caption4"/>
+
+                    <TextView
+                        android:id="@+id/description4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/videoDescription"
+                        android:textSize="14sp"
+                        android:paddingBottom="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:layout_below="@+id/cardtitle4"
+                        />
+
+                    <Button
+                        android:id="@+id/goVideo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:text="@string/ver_video"
+                        android:layout_below="@+id/description4"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btnEjecicios2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65.5dp"
+                android:layout_marginRight="65.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:theme="@style/StyleBotones"
+                android:text="@string/label_button_exersise"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
