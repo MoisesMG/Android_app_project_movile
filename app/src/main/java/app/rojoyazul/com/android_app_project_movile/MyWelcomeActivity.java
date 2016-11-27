@@ -13,25 +13,25 @@ public class MyWelcomeActivity extends WelcomeActivity {
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
                 .defaultBackgroundColor(R.color.background)
-                .page(new TitlePage(R.mipmap.ic_launcher,
+                .page(new TitlePage(R.drawable.ic_launcher1,
                         "Nombre Aplicación")
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
+                .page(new BasicPage(R.drawable.ayuda_seleccion_nivel,
                         "Selecciona un nivel",
                         "Selecciona el nivel de aprendizaje de las materias")
                         .background(R.color.background_two)
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
+                .page(new BasicPage(R.drawable.ayuda_seleccion_materia,
                         "Selecciona un Materia",
                         "Elige la Materia a Reforzar")
                         .background(R.color.background_one)
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
+                .page(new BasicPage(R.drawable.ayuda_seleccion_leccion,
                         "Selecciona una Lección",
                         "Escoge la lección para los ejercicios correspondientes.")
                         .background(R.color.background_two)
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
+                .page(new BasicPage(R.drawable.ayuda_ir_a_ejercicio,
                         "Ve al ejercicio",
                         "Presiona el botón para realizar los ejercicios")
                         .background(R.color.background)
