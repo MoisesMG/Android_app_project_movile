@@ -15,6 +15,8 @@ public class SubjectSelectionActivity extends AppCompatActivity {
     Button btnMateria2;
     Button btnMateria3;
     Button btnMateria4;
+    private int levelCode;
+    private int subjectsCodes[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,15 +25,74 @@ public class SubjectSelectionActivity extends AppCompatActivity {
         welcomeScreen = new WelcomeHelper(this, MyWelcomeActivity.class);
         welcomeScreen.show(savedInstanceState);
 
+        /**************** guardar informacion enviada de MainActivity *****************/
+        Bundle recieved = getIntent().getExtras();
+        levelCode = recieved.getInt("code");
+        DefineSubjectTitles(levelCode);
+        /*************************************/
+
+        /*******+ obtener codigo de la materias **************/
+        DefineSubjectsCodes(levelCode);
+        /***********************************************/
+
+        /************ buscar por id **************/
+        btnMateria2 = (Button) findViewById(R.id.Btn_Materia2);
+        btnMateria3 = (Button)findViewById(R.id.Btn_Materia3);
+        btnMateria4 = (Button)findViewById(R.id.Btn_Materia4);
         Btn_Materia1 = (Button) findViewById(R.id.Btn_Materia1);
+        /************************************/
+
+        /***** eventos onClicl *******/
         Btn_Materia1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (SubjectSelectionActivity.this, ActivityLesion.class);
-                startActivity(intent);
+                Intent i = new Intent (SubjectSelectionActivity.this, ActivityLesion.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("levelCode", levelCode);
+                bundle.putInt("subjectCode", subjectsCodes[0]);
+                i.putExtras(bundle);
+                startActivityForResult(i, 10000);
             }
         });
 
+        btnMateria2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (SubjectSelectionActivity.this, ActivityLesion.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("levelCode", levelCode);
+                bundle.putInt("subjectCode", subjectsCodes[1]);
+                i.putExtras(bundle);
+                startActivityForResult(i, 10000);
+            }
+        });
+
+        btnMateria3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (SubjectSelectionActivity.this, ActivityLesion.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("levelCode", levelCode);
+                bundle.putInt("subjectCode", subjectsCodes[2]);
+                i.putExtras(bundle);
+                startActivityForResult(i, 10000);
+            }
+        });
+
+        btnMateria4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (SubjectSelectionActivity.this, ActivityLesion.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("levelCode", levelCode);
+                bundle.putInt("subjectCode", subjectsCodes[3]);
+                i.putExtras(bundle);
+                startActivityForResult(i, 10000);
+            }
+        });
+        /****************************************/
+
+        /************ boton flotante ***************/
         FloatingActionButton Button_Nav = (FloatingActionButton) findViewById(R.id.ButtonNav);
         Button_Nav.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,19 +100,9 @@ public class SubjectSelectionActivity extends AppCompatActivity {
                 welcomeScreen.forceShow();
             }
         });
-
-        /************ buscar por id **************/
-        btnMateria2 = (Button) findViewById(R.id.Btn_Materia2);
-        btnMateria3 = (Button)findViewById(R.id.Btn_Materia3);
-        btnMateria4 = (Button)findViewById(R.id.Btn_Materia4);
-        /************************************/
+        /****************************************/
 
 
-        /**************** guardar informacion enviada de MainActivity *****************/
-        Bundle bundle = getIntent().getExtras();
-        DefineSubjectTitles(bundle.getInt("code"));
-
-        /*************************************/
     }//fin del metodo
 
     public void DefineSubjectTitles(int levelcode){
@@ -83,6 +134,36 @@ public class SubjectSelectionActivity extends AppCompatActivity {
             btnMateria4.setText(R.string.subject4_Level4);
         }
 
+    }//fin del metodo
+
+    public void DefineSubjectsCodes(int levelCode){
+        if(levelCode == ContentAplication.LEVELS[0]){
+            subjectsCodes = new int[ContentAplication.SUBJECTS_LV1.length];
+            for(int i=0; i<subjectsCodes.length; i++){
+                subjectsCodes[i] = ContentAplication.SUBJECTS_LV1[i];
+            }//fin de for
+        }//fin de if
+
+        if(levelCode == ContentAplication.LEVELS[1]){
+            subjectsCodes = new int [ContentAplication.SUBJECTS_LV2.length];
+            for(int i=0; i<subjectsCodes.length; i++){
+                subjectsCodes[i] = ContentAplication.SUBJECTS_LV2[i];
+            }//fin de for
+        }//fin de if
+
+        if(levelCode == ContentAplication.LEVELS[2]){
+            subjectsCodes = new int [ContentAplication.SUBJECTS_LV3.length];
+            for(int i=0; i<subjectsCodes.length; i++){
+                subjectsCodes[i] = ContentAplication.SUBJECTS_LV3[i];
+            }//fin de for
+        }//fin de if
+
+        if(levelCode == ContentAplication.LEVELS[3]){
+            subjectsCodes = new int [ContentAplication.SUBJECTS_LV4.length];
+            for(int i=0; i<subjectsCodes.length; i++){
+                subjectsCodes[i] = ContentAplication.SUBJECTS_LV4[i];
+            }//fin de for
+        }//fin de if
     }//fin del metodo
 
 }//fin de la clase
